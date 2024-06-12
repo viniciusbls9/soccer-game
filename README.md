@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Soccer Game
+
+Welcome to the Soccer Game! This project is built with the following technologies:
+
+- **ReactJS**
+- **NextJS** (version with app folder)
+- **Typescript**
+- **Jest**
+- **Eslint**
+- **TailwindCSS**
+- **src folder structure**
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Scripts](#scripts)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of the project up and running, follow these steps:
 
-```bash
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- Node.js (version 18.17.1 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/viniciusbls9/soccer-game
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd soccer-game
+    ```
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+    or
+    ```sh
+    yarn install
+    ```
+
+### Running the Development Server
+
+To start the development server, run:
+
+```sh
 npm run dev
-# or
+```
+
+or
+
+```sh
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+/soccer-game
+|-- /.github
+|   |-- ...
+|-- /public
+|   |-- ...
+|-- /src
+|   |-- /app
+|   |-- /components
+|   |-- /pages
+|   |-- /styles
+|   |-- /utils
+|   |-- index.tsx
+|-- .eslintrc.json
+|-- jest.config.js
+|-- next.config.mjs
+|-- package.json
+|-- tailwind.config.js
+|-- tsconfig.json
+|-- README.md
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Scripts
+In the project directory, you can run the following scripts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `npm run dev` or `yarn dev`: Runs the app in the development mode.
+- `npm run build` or `yarn build`: Builds the app for production.
+- `npm run start` or `yarn start`: Runs the built app in production mode.
+- `npm run lint` or `yarn lint`: Runs ESLint to check for linting errors.
+- `npm run test` or `yarn test`: Runs Jest to execute unit tests.
