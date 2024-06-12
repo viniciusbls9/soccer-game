@@ -15,9 +15,6 @@ Welcome to the Soccer Game! This project is built with the following technologie
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Scripts](#scripts)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
