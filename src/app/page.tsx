@@ -1,10 +1,11 @@
 'use client'
 
-import TextField from '@/components/TextField'
-import { useState } from 'react'
+import TextField from '@/components/TextField/TextField'
 
 export default function Home() {
-  const [value, setValue] = useState('')
+  const handleSearchPlayer = ({ value }: { value: string }) => {
+    console.log({ value })
+  }
 
-  return <TextField value={value} setValue={setValue} />
+  return <TextField handleConfirm={handleSearchPlayer} />
 }
