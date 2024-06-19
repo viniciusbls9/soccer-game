@@ -4,11 +4,10 @@ global.fetch = jest.fn()
 
 describe('fetchClient', () => {
   beforeEach(() => (fetch as jest.Mock).mockClear())
+  const mockFetch = fetch as jest.Mock
 
   it('should fetch GET data successfully', async () => {
     const mockData = { key: 'value' }
-
-    const mockFetch = fetch as jest.Mock
 
     mockFetch.mockResolvedValueOnce({
       ok: true,
@@ -21,7 +20,7 @@ describe('fetchClient', () => {
   })
 
   it('should throw an error if the network response is not ok', async () => {
-    ;(fetch as jest.Mock).mockResolvedValueOnce({
+    mockFetch.mockResolvedValueOnce({
       ok: false,
     })
 
