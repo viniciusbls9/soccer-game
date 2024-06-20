@@ -13,6 +13,7 @@ const TextField = ({ handleConfirm }: TextFieldProps) => {
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e) => e.key === 'Enter' && handleConfirm({ value })}
         placeholder="Digite o nome do jogador"
         className="p-2 mr-3 text-black"
       />
