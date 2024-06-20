@@ -33,6 +33,18 @@ describe('TextField Component', () => {
     expect(inputElement).toHaveValue(newValue)
   })
 
+  test('Should calls handleConfirm function on enter keydown click', async () => {
+    render(<TextField handleConfirm={handleConfirm} />)
+
+    const inputElement = screen.getByPlaceholderText('Digite o nome do jogador')
+    const newValue = 'New Value'
+
+    await userEvent.type(inputElement, `${newValue}{enter}`)
+
+    expect(handleConfirm).toHaveBeenCalledWith({ value: newValue })
+    expect(inputElement).toHaveValue(newValue)
+  })
+
   test('Should not calls handleConfirm function when click on the button but input is empty', async () => {
     render(<TextField handleConfirm={handleConfirm} />)
 
