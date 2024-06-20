@@ -1,0 +1,28 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "name": "Neymar",
+      "position": "PE",
+      "selection": "Brazil",
+      "league": "SPL",
+      "club": "Al Hilal",
+      "goals": 439,
+      "assists": 249,
+      "age": 32,
+      "photo": "https://cdn.sportmonks.com/images/soccer/players/19/275.png"
+    },
+    {
+      "id": "2",
+      "name": "Kylian Mbappe",
+      "position": "CA PE PD",
+      "selection": "France",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "goals": 330,
+      "assists": 110,
+      "age": 25,
+      "photo": "https://cdn.sportmonks.com/images/soccer/players/19/275.png"
+    }
+  ]
+}
