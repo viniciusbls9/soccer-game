@@ -38,8 +38,6 @@ describe('TextField Component', () => {
 
     const confirmButton = screen.getByTestId('confirm-button')
 
-    screen.logTestingPlaygroundURL()
-
     await userEvent.click(confirmButton)
 
     expect(handleConfirm).not.toHaveBeenCalled()
